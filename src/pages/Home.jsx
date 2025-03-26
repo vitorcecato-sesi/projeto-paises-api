@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Navbar from "../components/Navbar"
 import './styles/Home.css'
 
 function Home() {
@@ -46,6 +47,7 @@ function Home() {
 
   return (
     <>
+    <Navbar />
     <h3> Selecione seu país: </h3>
 
     <select value={informacoes?.nomeComum} onChange={(e) => guardarInformacoes(paises.find(pais => pais.name.common === e.target.value))}>
