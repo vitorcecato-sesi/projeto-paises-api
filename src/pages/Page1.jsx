@@ -1,5 +1,7 @@
 import "./styles/Page1.css"
 
+import Navbar from "../components/Navbar"
+
 import { useState, useEffect } from "react";
 
 function Page1Informacoes() {
@@ -7,6 +9,8 @@ function Page1Informacoes() {
 
   return (
     <>
+
+    <Navbar />
 
     <center>
     <p> {informacoes.nomeComum} </p>
