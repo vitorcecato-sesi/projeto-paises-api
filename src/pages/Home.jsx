@@ -5,7 +5,7 @@ function Home() {
     return(
         <>
             <section className="HomeBody">
-                <Navbar />
+                <Navbar home="ativo" />
             </section>
         </>
     )
