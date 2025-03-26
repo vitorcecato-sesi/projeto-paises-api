@@ -1,6 +1,6 @@
-
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Pais from './pages/Home'
+import Home from './pages/Home'
 import Page1 from "./pages/Page1"
 import './App.css'
 
@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-  <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Pais/>} /> 
+          <Route path='/' element={<Home/>} /> 
           <Route path="/informacoes1" element={<Page1 />} /> 
         </Routes>
       </BrowserRouter>
