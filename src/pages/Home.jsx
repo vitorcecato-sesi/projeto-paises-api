@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './styles/Home.css'
 
 function Home() {
   const [paises, setPaises] = useState([])
