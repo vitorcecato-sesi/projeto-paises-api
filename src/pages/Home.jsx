@@ -5,9 +5,8 @@ import Header from "../components/Header"
 import Footer from "../components/Footer";
 
 function Home() {
-  const [paises, setPaises] = useState([])
+  const [paises, setPaises] = useState(JSON.parse(localStorage.getItem("Dados API")) || [])
   const [informacoes, setInformacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "")
-  const [dadosAPI, setDadosAPI] = useState(JSON.parse(localStorage.getItem("Dados API")) || [])
   
   useEffect(() => {
     async function buscarPaises() {
@@ -15,7 +14,6 @@ function Home() {
         const resposta = await fetch("https://restcountries.com/v3.1/all")
         const dados = await resposta.json()
         setPaises(dados)
-        setDadosAPI(dados)
       } catch (error) {
         console.error(error)
       }
@@ -44,8 +42,8 @@ function Home() {
   }
 
   useEffect(() => {
-    localStorage.setItem("Dados API", JSON.stringify(dadosAPI))
-  }, [dadosAPI])
+    localStorage.setItem("Dados API", JSON.stringify(paises))
+  }, [paises])
 
   return (
     <>
