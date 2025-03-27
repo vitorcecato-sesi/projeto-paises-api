@@ -69,11 +69,6 @@ imgLogo:hover = Aperecer um circulo verde atras da logo apos passsar o mouse
     height: 3.4vh; 
 }
 
-p:hover{
-    color: rgb(31, 72, 4);
-    transition: all 450ms ease-in; /*Tempo para ocorrer a aumentada de texto*/
-}
-
 .imglogo:hover{
     background-color: #CEE741; /*Aparecer cor  atras da logo*/
     border-radius: 50%; /*Borda ficar com círculo*/
