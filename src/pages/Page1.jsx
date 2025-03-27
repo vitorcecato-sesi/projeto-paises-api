@@ -9,7 +9,7 @@ import Footer from "../components/Footer"
 import { useState } from "react";
 
 function Page1Informacoes() {
-  const [informacoes, setInformacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "");
+  const [informacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "");
 
   return (
     <>
@@ -18,7 +18,7 @@ function Page1Informacoes() {
       <Navbar />
 
       <center>
-        <h1> {informacoes.nomeComum} </h1>
+        <h1 id="titulo"> <i id="icon" class="fa-solid fa-location-dot"></i> {informacoes.nomeComum} </h1>
         <img id="imgPais" src={informacoes.bandeira} />
 
         <section className="alinhamento">
