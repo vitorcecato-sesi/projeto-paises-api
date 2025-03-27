@@ -15,7 +15,7 @@ function Page1Informacoes() {
 
       <center>
         <h1> {informacoes.nomeComum} </h1>
-        <img src={informacoes.bandeira} />
+        <img id="imgPais" src={informacoes.bandeira} />
 
         <section className="alinhamento">
           <section className="bloco">
@@ -24,12 +24,14 @@ function Page1Informacoes() {
           </section>
 
           <section className="bloco">
-            <p>Nome oficial <br /> <strong> {informacoes.nomeOficial} </strong> </p>
+            <p id="italic">Nome oficial </p> 
+            <p id="informacao"> <strong> {informacoes.nomeOficial} </strong> </p>
           </section>
         </section>
         
         <section className="bloco">
-          <p>Língua <br /> <strong> {informacoes.lingua} </strong> </p>
+          <p id="italic"> Língua </p> 
+          <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
         </section>
       </center>
     </>
