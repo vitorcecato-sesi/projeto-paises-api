@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./styles/Page3.css";
+import Navbar from "../components/Navbar";
 
 function PageTres() {
   const [informacoes] = useState(
@@ -11,26 +12,43 @@ function PageTres() {
   }, [informacoes]);
 
   return (
-    <section className="box-page3">
+    <>
+      <Navbar />
+      <br></br>
+      <section className="box-page3">
         <section className="box-titulo">
-      <h2>Informações - {informacoes.nomeComum}</h2>
-      <img src={informacoes.bandeira}></img>
+          <h2>Informações - {informacoes.nomeComum}</h2>
+          <img src={informacoes.bandeira}></img>
+        </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <section className="box-page3row">
+          <section className="box-esq">
+            <h3>Veja algumas informações do país...</h3>
+            <ul>
+              <li>População</li>
+              <li>Moeda</li>
+              <li>Maps</li>
+            </ul>
+          </section>
+          <section className="box-infos">
+            <section className="orgElementos">
+              <i className="fa-solid fa-users"></i>
+              <p>{informacoes.populacao}</p>
+            </section>
+            <section className="orgElementos">
+              <i className="fa-solid fa-coins"></i>
+              <p>{informacoes.moeda}</p>
+            </section>
+            <section className="orgElementos">
+              <i className="fa-solid fa-map-location-dot"></i>
+              <a href={informacoes.googleMaps}>Visite o google maps do país</a>
+            </section>
+          </section>
+        </section>
       </section>
-      <section className="box-infos">
-        <section className="orgElementos">
-          <i className="fa-solid fa-users"></i>
-          <p>{informacoes.populacao}</p>
-        </section>
-        <section className="orgElementos">
-          <i className="fa-solid fa-coins"></i>
-          <p>{informacoes.moeda.CHF.name}</p>
-        </section>
-        <section className="orgElementos">
-          <i className="fa-solid fa-map-location-dot"></i>
-          <p>{informacoes.area}</p>
-        </section>
-      </section>
-    </section>
+    </>
   );
 }
 

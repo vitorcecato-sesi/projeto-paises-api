@@ -4,11 +4,22 @@
     align-items: center;
 }
 
+.box-page3row {
+    display: flex;
+    flex-direction: row;
+}
+
 .box-titulo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+.box-titulo h2 {
+    color: #734AF6;
+    font-size: 1.8em;
+}
+
 
 .box-titulo img {
     width: 10vw;
@@ -19,15 +30,49 @@
 .orgElementos {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.orgElementos p {
+    color: #734AF6;
+}
+
+.orgElementos a {
+    color: #734AF6;
 }
 
 .orgElementos i {
    font-size: 2em;
    padding-right: 2em;
-   padding-top: 0.2em;
+   color: #734AF6;
 }
 
 .box-infos {
-    padding-top: 3em;
-    background-color: ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(247, 247, 247);
+    padding: 3em;
 }
+
+.box-infos :hover{
+transition: 0.5s;
+cursor: pointer;
+transform: scale(1.05);
+}
+
+
+.box-esq {
+    background-color: #734AF6;
+    color: white;
+    padding: 2em;
+    width: 20vw;
+    height: 30vh;
+}
+
+.box-esq :hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+    }
