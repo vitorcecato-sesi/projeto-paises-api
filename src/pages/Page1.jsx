@@ -1,3 +1,7 @@
+import "./styles/Page1.css"
+
+import Navbar from "../components/Navbar"
+
 import { useState, useEffect } from "react";
 
 function Page1Informacoes() {
@@ -5,13 +9,33 @@ function Page1Informacoes() {
 
   return (
     <>
-      
-          <p>Nome comum: {informacoes.nomeComum}</p>
-          <p>Nome oficial: {informacoes.nomeOficial}</p>
-          <p>Lingua: {informacoes.lingua}</p>
-        </>
+
+    <Navbar />
+
+    <center>
+    <p> {informacoes.nomeComum} </p>
+    <img src={informacoes.bandeira} />
     
 
+    <section className="bloco">
+          <p>Nome comum: {informacoes.nomeComum}</p>
+          </section>
+
+            <br />
+            <br />
+
+          <section className="bloco">
+          <p>Nome oficial: {informacoes.nomeOficial}</p>
+          </section>
+
+          <br />
+            <br />
+
+          <section className="bloco">
+          <p>Lingua: {informacoes.lingua}</p>
+          </section>
+          </center>
+        </>
   );
 }
 
