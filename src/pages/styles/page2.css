@@ -1,10 +1,25 @@
-.Box-Tudo{
-    padding-top: 4%;
-    padding-left:23% ;
-    padding-right: 23%;
+.nome-Pais{
+    display: flex;
+    gap:15px ;
+    justify-content: center;
 }
 
-.Blocao{
+.Titulo-Pais{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2.8em;
+}
+
+
+.Box-Informacoes-Bandeira{
+    padding-top: 3%;
+    padding-left:9% ;
+    padding-right: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Box-Informacoes{
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -15,87 +30,68 @@
     padding: 2em;
     text-align: center;
     background-image: linear-gradient(#564af7,#9099e7 );
-
-    
+    width: 1000em;    
 }
 
-.Bloc{
+.itulo-Informações{
+    color: white;
+}
+
+.Bloc-Informacoes-linha{
     flex-direction: row;
     align-items: center;
     justify-content: center;
     display: flex;
     gap: 2em;
-    border-radius: 1.4em;
     padding: 1em;
     text-align: center;
     width: 100%;
     justify-content: space-between;
 }
 
-.Capital{
-    border:solid black 2px;
-    border-radius: 4em;
-   padding: auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.Regiao{
-    border:solid black 2px;
-    border-radius: 4em;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  
-}
-
-.Sub-Regiao{
-    border:solid black 2px;
-    border-radius: 4em;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.Blox{
+.Blox-Informacoes{
     background-color: #3864e8;
     padding: 1.5em;
     border-radius: 2em;
-    width: 35%;
-    height: 35%;
-
+    width: 40%;
+    height: 65%;
 }
 
-.Ti{
-    text-align: center;
-    margin-top: 2%;
-    font-size: 4em;
-
+.Capital-Titulo{
+    border:solid black 2px;
+    border-radius: 1.2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
-.Bloc:hover> :not(:hover){
+.Regiao-Titulo{
+    border:solid black 2px;
+    border-radius: 1.2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Sub-Regiao-Titulo{
+    border:solid black 2px;
+    border-radius: 1.2em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Blox-Bandeira{
+    margin-top: 6%;
+    padding-left: 25%;
+}
+
+.Bloc-Informacoes-linha:hover> :not(:hover){
     filter: blur(5px);
     opacity: 0.5;
-
 }
 
-.ti-img{
-    display: flex;
-    gap:15px ;
-    justify-content: center;
-   
-}
-
-img{
-    width: 12%;
-    height: 12%;
-    border-radius: 3%;
-    margin-top: 1.5%;
-    background-color: #3864e8;
-}
-
-.Blox:hover{
+.Blox-Informacoes:hover{
     transform: scale(1.1);
     transition: transform 0.5s;
     background-color:  rgb(64, 35, 208) ;
@@ -104,22 +100,26 @@ img{
     box-shadow: 3px 4px 2px 0px black;
 }
 
-.Ti-Informações{
+.Capital-Titulo:hover{
+    border: white solid;
     color: white;
 }
 
-.Capital:hover{
+.Regiao-Titulo:hover{
     border: white solid;
+    color: white;
+}
+.Sub-Regiao-Titulo:hover{
+    border: white solid;
+    color: white;
 }
 
-.Regiao:hover{
-    border: white solid;
+.img1:hover{
+box-shadow: 2px 2px 2px 2px black;
+padding: 0.8em;
+transform: scale(1.1);
+    transition: transform 0.5s;
 }
-.Sub-Regiao:hover{
-    border: white solid;
-}
-
-
 
 
 
