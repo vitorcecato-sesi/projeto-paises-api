@@ -18,7 +18,7 @@ function Page1Informacoes() {
       <Navbar />
 
       <center>
-        <h1 id="titulo"> {informacoes.nomeComum} </h1>
+        <h1 id="titulo"> <i id="icon" class="fa-solid fa-location-dot"></i> {informacoes.nomeComum} </h1>
         <img id="imgPais" src={informacoes.bandeira} />
 
         <section className="alinhamento">
