@@ -1,0 +1,98 @@
+/*
+informacoes-contatos = Email e Instagram
+informacao-resposavel = texto falando do lider Vitor 
+bloco-img1 = Imagem do email com o email 
+bloco-img2 = Imagem do instagram com o instagram 
+email = tamanho da fonte
+instagram = tamanho da fonte 
+img = serve para as duas imagens ficarem do tamanho iguais
+p:hover = para quando passar o mouse sobre o paragrafo (informacao-resposavel) aumetar o texto e mudar de cor)
+imgLogo = tamanho da img logo e foi colococado para o lado com o padding
+imgLogo:hover = Aperecer um circulo verde atras da logo apos passsar o mouse
+*/
+
+.footer{
+    background-color: #bdd6f1;
+    padding: 1em;
+    display: flex;
+    justify-content: center; /* Separar  os blocos */   
+    height: 14vh;
+}
+
+.informacoes-contatos{ 
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.informacao-resposavel{
+    display: flex;
+    width: 45vw;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding-left: 15em; 
+    font-size: 1.1rem;
+
+}
+
+.bloco-img1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5em; 
+}
+
+.bloco-img2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 6.2em;
+    gap: 1.1em;  
+}
+
+.email{
+    font-size: 1.2em;
+    padding-left: 1em;
+}
+
+.instagram{
+    font-size: 1.2em;
+    padding-left: 1.3em;
+}
+
+.img-redes{
+    width: auto;
+    height: 3.4vh; 
+}
+
+p:hover{
+    color: rgb(31, 72, 4);
+    transition: all 450ms ease-in; /*Tempo para ocorrer a aumentada de texto*/
+}
+
+.imglogo:hover{
+    background-color: #CEE741; /*Aparecer cor  atras da logo*/
+    border-radius: 50%; /*Borda ficar com círculo*/
+}
+
+.imglogo{
+    width: 6vw;
+    height: 10vh; 
+    padding: 5px 0px 0px 5px; /*Especura da 'borda' atráz da logo'*/
+}
+
+@media screen and (max-width: 1000px)  {
+
+    .bloco-img1{
+        padding-left: 2em;
+    }
+    
+    .bloco-img2{
+        padding-left: 2em;
+    }
+    
+}
