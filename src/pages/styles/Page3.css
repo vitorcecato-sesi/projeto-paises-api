@@ -1,86 +1,83 @@
 .box-page3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box-page3 :hover {
-    transform: scale(1.02);
-    transition: 0.5s;
+  transform: scale(1.02);
+  transition: 0.5s;
 }
 
 .box-page3row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .box-titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .box-titulo h2 {
-    color: #734AF6;
-    font-size: 1.8em;
+  color: #734af6;
+  font-size: 1.8em;
 }
 
-
 .box-titulo img {
-    width: 10vw;
-    height: 20vh;
-    padding-left: 5em;
+  width: 10vw;
+  height: 20vh;
+  padding-left: 5em;
 }
 
 .orgElementos {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-
 .orgElementos p {
-    color: #734AF6;
+  color: #734af6;
 }
 
 .orgElementos a {
-    color: #734AF6;
+  color: #734af6;
 }
 
 .orgElementos i {
-   font-size: 2em;
-   padding-right: 2em;
-   color: #734AF6;
+  font-size: 2em;
+  padding-right: 2em;
+  color: #734af6;
 }
 
 .box-infos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(247, 247, 247);
-    padding: 3em;
-    box-shadow: 1px 1px 10px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(247, 247, 247);
+  padding: 3em;
+  box-shadow: 1px 1px 10px gray;
 }
 
-.box-infos :hover{
-transition: 0.5s;
-cursor: pointer;
-transform: scale(1.05);
+.box-infos :hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
 }
-
 
 .box-esq {
-    background-color: #734AF6;
-    color: white;
-    padding: 2em;
-    width: 20vw;
-    height: 30vh;
-    box-shadow: 1px 1px 10px gray;
+  background-color: #734af6;
+  color: white;
+  padding: 2em;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: 1px 1px 10px gray;
 }
 
-.box-esq :hover{
-    transition: 0.5s;
-    cursor: pointer;
-    transform: scale(1.05);
-    }
+.box-esq :hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.05);
+}
