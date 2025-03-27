@@ -19,18 +19,18 @@ function Page1Informacoes() {
 
         <section className="alinhamento">
           <section className="bloco">
-            <p id="italic"> Nome comum </p> 
+            <p id="italic"> Nome Comum </p> 
             <p id="informacao"> <strong> {informacoes.nomeComum} </strong> </p>
           </section>
 
           <section className="bloco">
-            <p id="italic">Nome oficial </p> 
+            <p id="italic">Nome Oficial </p> 
             <p id="informacao"> <strong> {informacoes.nomeOficial} </strong> </p>
           </section>
         </section>
         
         <section className="bloco">
-          <p id="italic"> Língua </p> 
+          <p id="italic"> Língua(s) </p> 
           <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
         </section>
       </center>
