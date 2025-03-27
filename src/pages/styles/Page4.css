@@ -37,7 +37,6 @@
     border-radius: 1em;
     transition: all 1s ease;
     box-shadow: 3px 3px 10px 0px #264990 ;
-
 }
 
 .imgBandeira:hover {
@@ -52,8 +51,9 @@
     text-align: center;
 }
 
+/* largura da fonte */
 .blocos h3{
-    font-weight: normal;
+    font-weight: normal; 
 }
 
 .bloco{
