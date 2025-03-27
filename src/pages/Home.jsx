@@ -48,6 +48,8 @@ function Home() {
   return (
     <>
     <Navbar />
+    <section className="meio">
+    <section className="center">
     <h3> Selecione seu país: </h3>
 
     <select value={informacoes?.nomeComum} onChange={(e) => guardarInformacoes(paises.find(pais => pais.name.common === e.target.value))}>
@@ -62,9 +64,12 @@ function Home() {
       <>
       <p> Pais selecionado: {informacoes.nomeComum} </p>
       <img src={informacoes.bandeira}/>
+      
 
       </>
     )}
+    </section>
+    </section>
     </>
   )
 
