@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar"
+import './styles/Home.css'
 import Header from "../components/Header"
 
 function Home() {
   const [paises, setPaises] = useState([])
   const [informacoes, setInformacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "")
+  const [dadosAPI, setDadosAPI] = useState(JSON.parse(localStorage.getItem("Dados API")) || [])
   
   useEffect(() => {
     async function buscarPaises() {
@@ -12,6 +14,7 @@ function Home() {
         const resposta = await fetch("https://restcountries.com/v3.1/all")
         const dados = await resposta.json()
         setPaises(dados)
+        setDadosAPI(dados)
       } catch (error) {
         console.error(error)
       }
@@ -21,24 +24,27 @@ function Home() {
 
   const guardarInformacoes = (pais) => {
     const informacoes = {
-      
       nomeComum: pais.name.common,
       nomeOficial: pais.name.official,
-      lingua: pais.languages,
-      capital: pais.capital,
+      lingua: pais.languages ? Object.values(pais.languages).join(", ") : "Lingua não Língua não conhecida!",
+      capital: pais.capital ? pais.capital[0] : "Capital não conhecida!",
       regiao: pais.region,
       subRegiao: pais.subregion,
-      moeda: pais.currencies,
+      moeda: pais.currencies ? pais.currencies[Object.keys(pais.currencies)[0]].name : "Moeda não conhecida!",
       area: pais.area,
       populacao: pais.population,
       paisesFronteira: pais.borders,
-      fusoHorario: pais.timezones,
+      fusoHorario: pais.timezones ? pais.timezones.join(", ") : "Fuso-Horário não conhecido!",
       sigla: pais.flag,
       bandeira: pais.flags.png
     }
     setInformacoes(informacoes)
     localStorage.setItem("Informações", JSON.stringify(informacoes))
   }
+
+  useEffect(() => {
+    localStorage.setItem("Dados API", JSON.stringify(dadosAPI))
+  }, [dadosAPI])
 
   return (
     <>
