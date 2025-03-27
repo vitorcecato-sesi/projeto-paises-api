@@ -1,41 +1,49 @@
-import "./styles/Page1.css"
+// Estilização
+import "./styles/Page1.css";
 
-import Navbar from "../components/Navbar"
+// Components
+import Header from "../components/Header"
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Page1Informacoes() {
-    const [informacoes, setInformacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "")
+  const [informacoes, setInformacoes] = useState(JSON.parse(localStorage.getItem("Informações")) || "");
 
   return (
     <>
+      <Header />
 
-    <Navbar />
+      <Navbar />
 
-    <center>
-    <p> {informacoes.nomeComum} </p>
-    <img src={informacoes.bandeira} />
-    
+      <center>
+        <h1> {informacoes.nomeComum} </h1>
+        <img id="imgPais" src={informacoes.bandeira} />
 
-    <section className="bloco">
-          <p>Nome comum: {informacoes.nomeComum}</p>
+        <section className="alinhamento">
+          <section className="bloco">
+            <p id="italic"> Nome Comum </p> 
+            <p id="informacao"> <strong> {informacoes.nomeComum} </strong> </p>
           </section>
-
-            <br />
-            <br />
 
           <section className="bloco">
-          <p>Nome oficial: {informacoes.nomeOficial}</p>
+            <p id="italic">Nome Oficial </p> 
+            <p id="informacao"> <strong> {informacoes.nomeOficial} </strong> </p>
           </section>
+        </section>
+        
+        <section className="bloco">
+          <p id="italic"> Língua(s) </p> 
+          <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
+        </section>
+      </center>
 
-          <br />
-            <br />
+      <br />
+      <br />
 
-          <section className="bloco">
-          <p>Lingua: {informacoes.lingua}</p>
-          </section>
-          </center>
-        </>
+      <Footer />
+    </>
   );
 }
 
