@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./styles/Page3.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function PageTres() {
   const [informacoes] = useState(
@@ -13,7 +15,10 @@ function PageTres() {
 
   return (
     <>
+      <Header />
       <Navbar />
+      <br></br>
+      <br></br>
       <br></br>
       <section className="box-page3">
         <section className="box-titulo">
@@ -48,6 +53,10 @@ function PageTres() {
           </section>
         </section>
       </section>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </>
   );
 }

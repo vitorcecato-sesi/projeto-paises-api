@@ -14,6 +14,7 @@ function App() {
           <Route path='/' element={<Home/>} /> 
           <Route path="/page1" element={<Page1 />} /> 
           <Route path="/page4" element={<Page4 />} /> 
+          <Route path="/page3" element={<PageTres />} /> 
         </Routes>
       </BrowserRouter>
     </> 
