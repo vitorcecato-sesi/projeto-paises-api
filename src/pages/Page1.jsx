@@ -2,7 +2,9 @@
 import "./styles/Page1.css";
 
 // Components
+import Header from "../components/Header"
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
 import { useState } from "react";
 
@@ -11,6 +13,8 @@ function Page1Informacoes() {
 
   return (
     <>
+      <Header />
+
       <Navbar />
 
       <center>
@@ -34,6 +38,11 @@ function Page1Informacoes() {
           <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
         </section>
       </center>
+
+      <br />
+      <br />
+
+      <Footer />
     </>
   );
 }
