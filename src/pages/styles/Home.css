@@ -1,4 +1,52 @@
-.HomeBody {
-    margin: 0;
-    padding: 0;
+body {
+  background-image: linear-gradient(to bottom, #87CEEB, #4682B4);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #00698f;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+img {
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  ai
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #00698f;
+}
+
+a:hover {
+  color: #004d7a;
 }
