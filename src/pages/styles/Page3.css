@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.box-page3 :hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
 .box-page3row {
     display: flex;
     flex-direction: row;
@@ -34,6 +39,7 @@
     align-items: center;
 }
 
+
 .orgElementos p {
     color: #734AF6;
 }
@@ -54,6 +60,7 @@
     justify-content: space-around;
     background-color: rgb(247, 247, 247);
     padding: 3em;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .box-infos :hover{
@@ -69,6 +76,7 @@ transform: scale(1.05);
     padding: 2em;
     width: 20vw;
     height: 30vh;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .box-esq :hover{
