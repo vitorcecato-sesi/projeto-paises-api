@@ -1,6 +1,7 @@
-
+import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Pais from './pages/Home'
+import Home from './pages/Home'
+import Page1 from "./pages/Page1"
 import './App.css'
 import PageTres from './pages/Page3'
 
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <>
-  <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Pais/>} />       
           <Route path='/page3' element={<PageTres/>} /> 
