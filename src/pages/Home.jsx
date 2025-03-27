@@ -49,6 +49,7 @@ function Home() {
     <>
     <Header />
     <Navbar />
+    <section className="tudo">
     <section className="meio">
     <section className="center">
     <h3> Selecione seu país: </h3>
@@ -73,6 +74,8 @@ function Home() {
     </section>
     <br />
     <Footer />
+    </section>
+    
     </>
   )
 
