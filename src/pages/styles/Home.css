@@ -1,4 +1,24 @@
-.HomeBody {
-    margin: 0;
-    padding: 0;
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c40eb;
+    background-image: linear-gradient(#5c40eb, white);
+    padding: 5em;
+    border-radius: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50em;
+    margin-top: 1em;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #444;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.meio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
