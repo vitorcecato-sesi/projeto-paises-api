@@ -18,7 +18,7 @@ function Page1Informacoes() {
       <Navbar />
 
       <center>
-        <h1 id="titulo"> {informacoes.nomeComum} </h1>
+        <h1 id="titulo"> <i id="icon" class="fa-solid fa-location-dot"></i> {informacoes.nomeComum} </h1>
         <img id="imgPais" src={informacoes.bandeira} />
 
         <section className="alinhamento">
@@ -35,7 +35,7 @@ function Page1Informacoes() {
         
         <section className="bloco">
           <p id="italic"> Língua(s) </p> 
-          <p id="informacao"> <strong> {informacoes.sigla} </strong> </p>
+          <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
         </section>
       </center>
 
