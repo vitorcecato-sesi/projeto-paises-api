@@ -35,7 +35,7 @@ function Page1Informacoes() {
         
         <section className="bloco">
           <p id="italic"> Língua(s) </p> 
-          <p id="informacao"> <strong> {informacoes.sigla} </strong> </p>
+          <p id="informacao"> <strong> {informacoes.lingua} </strong> </p>
         </section>
       </center>
 
