@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "./styles/Page4.css"
 
 function Page4 () {
@@ -7,6 +9,7 @@ function Page4 () {
 
     return ( 
         <>
+        <Header />
         <Navbar />
 
         <section className="bodyPage4"> 
@@ -37,6 +40,10 @@ function Page4 () {
             </section>
 
         </section>
+
+        <br />
+
+        <Footer /> 
         </>
     )
 }

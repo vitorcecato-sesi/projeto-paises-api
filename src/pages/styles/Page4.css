@@ -8,12 +8,12 @@
 .titulo{
     text-align: center;
     padding: 1.2em;
-    background-color: rgb(130, 161, 218);
+    background-color: #b6bbfa;
     width: 13vw;
     justify-content: center;
     border-radius: 2em;
     transition: all 1s ease;
-    box-shadow: 3px 3px 10px 0px #264990 ;
+    box-shadow: 3px 3px 10px 0px #567dcc ;
 }
 
 .titulo:hover{
@@ -57,7 +57,7 @@
 }
 
 .bloco{
-    background-color: rgb(136, 163, 212);
+    background-color: #b6bbfa;
     padding: 2em;
     width: 25vw;
     border-radius: 1.5em;
