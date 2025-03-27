@@ -32,9 +32,9 @@ function Home() {
       regiao: pais.region,
       subRegiao: pais.subregion,
       moeda: pais.currencies ? pais.currencies[Object.keys(pais.currencies)[0]].name : "Moeda não conhecida!",
-      area: pais.area,
+      googleMaps: pais.maps.googleMaps,
       populacao: pais.population,
-      paisesFronteira: pais.borders,
+      paisesFronteira: pais.borders ? pais.paisesFronteira.join(", ") : "Não tem países em fronteira!",
       fusoHorario: pais.timezones ? pais.timezones.join(", ") : "Fuso-Horário não conhecido!",
       sigla: pais.flag,
       bandeira: pais.flags.png
