@@ -34,7 +34,7 @@ function Home() {
       populacao: pais.population,
       paisesFronteira: pais.borders ? Object.values(pais.borders).join(", ") : "Não tem países em fronteira!",
       fusoHorario: pais.timezones ? pais.timezones.join(", ") : "Fuso-Horário não conhecido!",
-      sigla: pais.fifa,
+      sigla: pais.fifa ? pais.fifa : "Não encontrado",
       bandeira: pais.flags.png
     }
     setInformacoes(informacoes)
