@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Page1 from "./pages/Page1"
 import Page4 from "./pages/Page4"
+import PageTres from './pages/Page3'
+
 import './App.css'
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} /> 
           <Route path="/page4" element={<Page4 />} /> 
+          <Route path="/page3" element={<PageTres />} /> 
           <Route path="/page1" element={<Page1 />} /> 
         </Routes>
       </BrowserRouter>
