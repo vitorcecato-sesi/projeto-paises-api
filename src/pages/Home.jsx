@@ -73,6 +73,7 @@ function Home() {
     )}
     </section>
     </section>
+    <br />
     <Footer />
     </>
   )
