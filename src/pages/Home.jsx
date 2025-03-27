@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 
 function Home() {
   const [paises, setPaises] = useState([])
@@ -41,6 +42,7 @@ function Home() {
 
   return (
     <>
+    <Header />
     <Navbar />
     <h3> Selecione seu país: </h3>
 
